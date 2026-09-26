@@ -1,0 +1,119 @@
+[worldserver]
+
+###################################################################################################
+# REALM FIRST TITLES CONFIGURATION
+#
+#   RealmFirstTitles.Enabled
+#       Description: Enable or disable the Realm First Titles module.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.Enabled = 1
+
+#
+#   RealmFirstTitles.GrantBlizzlikeRaidTitles
+#       Description: Enable standard Wrath realm-first raid titles (e.g., Obsidian Slayer, The Magic Seeker, Conqueror of Naxxramas, Death's Demise, The Celestial Defender, Grand Crusader).
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.GrantBlizzlikeRaidTitles = 1
+
+#
+#   RealmFirstTitles.GrantRestoredBetaTitles
+#       Description: Enable restored Level 80 class, race, and grand master profession realm-first titles (e.g., The Supreme, Assassin, Warbringer, Archmage, Doctor, Iron Chef, etc.).
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.GrantRestoredBetaTitles = 1
+
+#
+#   RealmFirstTitles.GrantLightOfDawnFallback
+#       Description: Fallback title option for Realm First: Fall of the Lich King (Achievement 4576).
+#       Default:     0 (Disabled)
+#                    1 (Enabled)
+#
+
+RealmFirstTitles.GrantLightOfDawnFallback = 0
+
+#
+#   RealmFirstTitles.RequireCanonicalFirstHolder
+#       Description: Restrict title grant strictly to the single earliest timestamp achiever in the database.
+#                    If set to 0, every character that has earned or is granted the Realm First achievement gets the title.
+#       Default:     0 (Grant to all holders of the achievement)
+#                    1 (Strictly earliest timestamp winner only)
+#
+
+RealmFirstTitles.RequireCanonicalFirstHolder = 0
+
+#
+#   RealmFirstTitles.SyncOnLogin
+#       Description: Re-validate and grant any missing realm-first titles whenever a player logs in.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.SyncOnLogin = 1
+
+#
+#   RealmFirstTitles.RepairOnStartup
+#       Description: Automatically audit and repair online/offline character achievement title records on worldserver startup.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.RepairOnStartup = 1
+
+#
+#   RealmFirstTitles.AnnounceGrantedTitles
+#       Description: Announce to the player in chat when their realm-first title is confirmed/granted.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.AnnounceGrantedTitles = 1
+
+#
+#   RealmFirstTitles.AutoSetCurrentTitle
+#       Description: Automatically equip the realm-first title if the player does not have one active.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.AutoSetCurrentTitle = 1
+
+#
+#   RealmFirstTitles.AuditRepairOfflineCharacters
+#       Description: Allow startup and GM audit repairs to directly fix offline character title bitmasks in the database.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.AuditRepairOfflineCharacters = 1
+
+#
+#   RealmFirstTitles.PreventGMAchievements
+#       Description: Block GameMaster / Moderator accounts (Security > 0 or GM mode) from completing Realm First achievements, earning Realm First criteria, or holding Realm First titles.
+#       Default:     1 (Enabled)
+#                    0 (Disabled)
+#
+
+RealmFirstTitles.PreventGMAchievements = 1
+
+#
+#   RealmFirstTitles.AuditOutputLimit
+#       Description: Maximum number of detail lines printed during GM audit commands.
+#       Default:     25
+#
+
+RealmFirstTitles.AuditOutputLimit = 25
+
+#
+#   RealmFirstTitles.ReportOutputLimit
+#       Description: Maximum number of detail lines printed during `.realmfirst achievements` and `.realmfirst titles`.
+#       Default:     50
+#
+
+RealmFirstTitles.ReportOutputLimit = 50
